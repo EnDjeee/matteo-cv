@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{multicol} % Used for itemizing items in multiple columns
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Matteo} % Your first name
+\familyname{Di Fazio} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+%\address{Via Gaeta 4, Fondi(LT), 04022, Italy}{}
+\mobile{(+39) 3472721148}
+\email{difaziomatteo@gmail.com}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%\cvitem{}{Statistics, Data Science, Machine Learning, Regression Models}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+
+\cventry{2013-2019}{Bachelor Degree in Computer Science}{Sapienza University}{Roma}{95/110}{}
+
+\cventry{2008-2013}{High School Diploma}{Liceo Classico Piero Gobetti}{Fondi(LT)}{97/100}{}
+
+%----------------------------------------------------------------------------------------
+%   EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\cventry{Jun 2018-Feb 2019}{Student Internship}{Sapienza University}{Roma}{}{
+Progettazione e sviluppo di social login con OAuth2 per VirtuoSA, un'applicazione cloud-native a microservizi.
+E' stato implementato un microservizio che si occupa di gestire il processo di autenticazione degli utenti di VirtuoSA
+sia mediante database locale, sia mediante autenticazione social. Il microservizio, sviluppato in Spring Boot 2, genera un JWT(usato per richiedere risorse protette ai vari microservizi di VirtuoSA), utilizza
+MySQL per la persistenza dei dati e implementa delle REST API per realizzare la componente di login.
+}
+
+%----------------------------------------------------------------------------------------
+%   HONOURS AND AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Honours and Awards}
+%\subsection{Academic}
+%\vspace{-5mm}
+%\cventry{}{}{}{}{}{
+%\begin{itemize}
+    %\item Secured a \textbf{Branch Change} from B.Tech in Chemical Engineering to Integrated M.Sc. in Mathematics and Computing
+    %\item Currently ranked $2^{nd}$ out of 54 students in the Department of Mathematics, IIT Kharagpur
+    %\item Secured a position in \textbf{0.5\%}(All India Rank - \textbf{2434}) in the Joint Entrance Examination (JEE) Advanced, 2013
+    %\item Secured All India Rank - \textbf{670} with a score of \textbf{325/360} in the Joint Entrance Examination (JEE) Mains, 2013
+    %\item Secured \textbf{338} marks out of 450 in Birla Institute of Technology and Science Aptitude Test (BITSAT), 2013
+%\end{itemize}
+%}
+
+%\subsection{Scholarships}
+%\vspace{-5mm}
+%\cventry{}{}{}{}{}{
+%\begin{itemize}
+%	\item Recipient of the \textbf{Innovation in Science Pursuit for Inspired Research} (INSPIRE) scholarship. A program funded and managed by Department of Science and Technology, India. It is offered to top 1.0\% of the students pursuing sciences in the country on competitive basis.
+%\end{itemize}
+%}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\cvitem{Prog. Languages}{Java, Python, C, SQL, JavaScript}
+\cvitem{Technologies}{Spring Framework, ReactJS, Jenkins, HTML, OKD }
+\cvitem{Tools}{Intellij IDEA, Visual Studio Code, Git, Bash}
+\cvitem{Operating Systems}{Linux, Windows}
+\cvitem{Methodologies}{DevOps, Microservices, Agile}
+
+
+
+%----------------------------------------------------------------------------------------
+%   LANGUAGE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+\cvitem{English}{Professional working proficiency}
+\cvitem{Italian}{Native speaker}
+
+%----------------------------------------------------------------------------------------
+%	EXTRA-CURRICULAR SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Extra-curricular Activities}
+%\vspace{-5mm}
+%\cventry{}{}{}{}{}{
+%\begin{itemize}
+%	\item I was a part of \textbf{Gold} winning team in Inter Hall Bengali Dramatics.
+%    \item I served as a \textbf{Design Team Member} for Rangoli in my Hall.
+%    \item I served as a volunteer under \textbf{National Service Scheme} (NSS) for 2 years.
+%    \item I was a member of Guest Reception Team of Spring Fest, social and cultural festival of IIT Kharagpur.
+%    \item I was elected for the post of \textbf{Cricket \& Athletics Secretary} in my Hall. I planned and managed INR 1.22 lakhs for the proper maintenance of sports.I conducted the games properly which led to win \textbf{Gold} in Inter Hall Athletics Competition.
+%    \item I am also a member of Cricket team of my Hall.
+%\end{itemize}
+%}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
+
+
