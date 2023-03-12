@@ -79,6 +79,20 @@
 %----------------------------------------------------------------------------------------
 
 \section{Esperienza professionale}
+\cventry{Aug 2019 - }{DevOps Engineer}{Consortium GARR}{Roma}{}{
+Gestione ed evoluzione di: 1) una piattaforma Cloud privata basata su Openstack, 2) una piattaforma per la gestione di applicazioni e servizi containerizzati basata su Kubernetes e 3) una piattaforma interna basata sul software Jira.
+Mi sono occupato di:
+\begin{itemize}
+    \item Implementare il servizio di load balancing \textbf{Octavia} all'interno di \textbf{Openstack}, dare supporto all'aggiornamento della piattaforma (\textbf{Queens -> Stein -> Wallaby}), dare supporto agli utenti, effettuare debug delle componenti di Openstack
+    \item Migliorare la resilienza del database di \textbf{Maas} tramite l'implementazione di un sistema di replica asincrona
+    \item Studiare ed implementare una istanza di \textbf{Charmed Kubernetes} specifica per la \textbf{cloud} privata di GARR
+    \item Trasferire la Container Platform da infrastruttura bare metal a virtuale (VMs Openstack)
+    \item Amministrare la \textbf{Container Platform}, dare supporto agli utenti, aggiornare il software. Curare l'evoluzione della Container Platform valutando, testando ed eventualmente implementando nuove funzionalità e componenti, al fine di migliorare le prestazioni della piattaforma e di offrire una esperienza di utilizzo migliore agli utenti 
+    \item Amministrare la piattaforma \textbf{Jira}, analizzare e proporre l'acquisto di plugins in base ai casi d'uso aziendali, progettare ed implementare workflow e regole di automazione, aggiornare il software
+    \item Implementare un sistema di \textbf{replica asincrona} del database (\textbf{PostgreSQL}) della piattaforma Jira che fosse resiliente a problemi di partizionamento della rete, che garantisse la consistenza dei dati e che si accorgesse di fallimenti ed eseguisse la procedura di failover in modo automatico. Per implementare tale sistema si è scelto di utilizzare il software open source \textbf{Stolon}
+    \item Creare \textbf{playbooks Ansible} per il deploy e la configurazione della piattaforma Jira e di tutte le componenti necessarie/utili al corretto funzionamento della piattaforma (Apache, Certbot, PostgreSQL, Dovecot)
+\end{itemize} 
+}
 \cventry{Jun 2018-Feb 2019}{Tirocinio interno}{Università Sapienza}{Roma}{}{
 Progettazione e sviluppo di social login con OAuth2 per VirtuoSA, un'applicazione cloud-native a microservizi.
 Mi sono occupato di implementare lato back-end un microservizio che si occupa di gestire il processo di autenticazione degli utenti di VirtuoSA.
@@ -123,10 +137,10 @@ Mi sono occupato di implementare lato back-end un microservizio che si occupa di
 
 \section{Competenze tecniche}
 
-\cvitem{Linguaggi di prog.}{Java, SQL, JavaScript, Python, C}
-\cvitem{Tecnologie}{Spring Framework, ReactJS, HTML, OKD, Jenkins}
-\cvitem{Strumenti}{Intellij IDEA, Visual Studio Code, Git, Bash}
-\cvitem{Sistemi operativi}{Linux, Windows}
+\cvitem{Linguaggi di prog.}{Python, Bash, SQL, JavaScript (ReactJS), Java (Spring Framework), Golang, C}
+\cvitem{Tecnologie}{Kubernetes, Openstack, Docker, PostgreSQL, LXC, Gitlab CI/CD, OKD}
+\cvitem{Strumenti}{Bash, Git, Ansible, Juju, Maas, Vim, Sublime Text, Gitlab, Visual Studio Code, Terraform}
+\cvitem{Sistemi operativi}{GNU/Linux (Ubuntu), Windows}
 \cvitem{Metodologie}{DevOps, Microservices, Agile}
 
 
