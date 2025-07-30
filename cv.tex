@@ -79,32 +79,55 @@
 %----------------------------------------------------------------------------------------
 
 \section{Esperienza professionale}
-\cventry{Aug 2019 - }{DevOps Engineer}{Consortium GARR}{Roma}{}{
-Gestione ed evoluzione di: 1) una piattaforma Cloud privata basata su Openstack, 2) una piattaforma per la gestione di applicazioni e servizi containerizzati basata su Kubernetes e 3) una piattaforma interna basata sul software Jira.
-Mi sono occupato di:
-\begin{itemize}
-    \item Implementare il servizio di load balancing \textbf{Octavia} all'interno di \textbf{Openstack}, dare supporto all'aggiornamento della piattaforma (\textbf{Queens -> Stein -> Wallaby}), dare supporto agli utenti, effettuare debug delle componenti di Openstack
-    \item Migliorare la resilienza del database di \textbf{Maas} tramite l'implementazione di un sistema di replica asincrona
-    \item Studiare ed implementare una istanza di \textbf{Charmed Kubernetes} specifica per la \textbf{cloud} privata di GARR
-    \item Trasferire la Container Platform da infrastruttura bare metal a virtuale (VMs Openstack)
-    \item Amministrare la \textbf{Container Platform}, dare supporto agli utenti, aggiornare il software. Curare l'evoluzione della Container Platform valutando, testando ed eventualmente implementando nuove funzionalità e componenti, al fine di migliorare le prestazioni della piattaforma e di offrire una esperienza di utilizzo migliore agli utenti 
-    \item Amministrare la piattaforma \textbf{Jira}, analizzare e proporre l'acquisto di plugins in base ai casi d'uso aziendali, progettare ed implementare workflow e regole di automazione, aggiornare il software
-    \item Implementare un sistema di \textbf{replica asincrona} del database (\textbf{PostgreSQL}) della piattaforma Jira che fosse resiliente a problemi di partizionamento della rete, che garantisse la consistenza dei dati e che si accorgesse di fallimenti ed eseguisse la procedura di failover in modo automatico. Per implementare tale sistema si è scelto di utilizzare il software open source \textbf{Stolon}
-    \item Creare \textbf{playbooks Ansible} per il deploy e la configurazione della piattaforma Jira e di tutte le componenti necessarie/utili al corretto funzionamento della piattaforma (Apache, Certbot, PostgreSQL, Dovecot)
-\end{itemize} 
-}
-\cventry{Jun 2018-Feb 2019}{Tirocinio interno}{Università Sapienza}{Roma}{}{
-Progettazione e sviluppo di social login con OAuth2 per VirtuoSA, un'applicazione cloud-native a microservizi.
-Mi sono occupato di implementare lato back-end un microservizio che si occupa di gestire il processo di autenticazione degli utenti di VirtuoSA.
-\begin{itemize}
-    \item Microservizio sviluppato con \textbf{Spring Boot 2} 
-    \item Generazione di token \textbf{JWT} e applicazione del design pattern \textbf{'Access Token'}
-    \item Studio ed implementazione del protocollo di autorizzazione \textbf{OAuth2}
-    \item Implementazione di \textbf{REST API} per la realizzazione della componente di autenticazione; utilizzo di \textbf{MySQL} per la persistenza dei dati 
-    \item Deploy sulla piattaforma \textbf{OKD}
-    \item Applicazione delle pratiche \textbf{DevOps} di Continuous Integration (CI) e Continuous Delivey (CD) tramite le pipeline Jenkins
-\end{itemize} 
-}
+% ——————————————————————————————
+\cventry
+  {Aug 2019--Present}                 % years
+  {DevOps Engineer}                   % job title
+  {Consortium GARR}                   % employer
+  {Roma}                              % location
+  {}                                  % optional, e.g. degree or grade
+  {                                   % main description
+    Gestione ed evoluzione di: 1) una piattaforma Cloud privata basata su Openstack, 2) una piattaforma per la gestione di applicazioni e servizi containerizzati basata su Kubernetes e 3) una piattaforma interna basata sul software Jira.
+    Mi sono occupato di:
+    \begin{itemize}
+      \item Implementare il servizio di load balancing \textbf{Octavia} all'interno di \textbf{OpenStack},
+            supportare l'aggiornamento della piattaforma (\textbf{Queens--Stein--Wallaby}),
+            assistere gli utenti ed effettuare debug delle componenti di OpenStack
+      \item Implementare un sistema di \textbf{replica asincrona} del database (\textbf{PostgreSQL}) del software MaaS che fosse resiliente a problemi di partizionamento della rete, che garantisse la consistenza dei dati e che si accorgesse di fallimenti ed eseguisse la procedura di failover in modo automatico. Per implementare tale sistema si è scelto di utilizzare il software open source \textbf{Stolon}
+      \item Studiare e implementare un'istanza di \textbf{Charmed Kubernetes}
+            specifica per la \textbf{cloud} privata di GARR
+      \item Trasferire la Container Platform da infrastruttura bare-metal a virtuale
+            (VMs su OpenStack)
+      \item Amministrare la Container Platform: supporto utenti, aggiornamenti.
+            Curare l'evoluzione della Container Platform valutando, testando ed eventualmente implementando nuove funzionalità e componenti
+      \item Amministrare la piattaforma \textbf{Jira}: plugin, workflow, regole di automazione, aggiornamenti
+      \item Creare \textbf{playbooks Ansible} per deploy/configurazione Jira
+            e dipendenze (Apache, Certbot, PostgreSQL, Dovecot)
+      \item Progettare e sviluppare un \textbf{microservizio} che espone delle \textbf{REST API} per interrogare una istanza di \textbf{InfluxDB} contenente metriche relative alla GARR Cloud (basata su software OpenStack). Per lo sviluppo del microservizio è stato scelto il framework python FastAPI.
+      \item \textbf{Automatizzare} l'installazione e la configurazione di una istanza MaaS, un cluster Ceph e una regione cloud OpenStack all'interno di un progetto greenfield. Tool utilizzati per il lavoro: \textbf{Ansible} e \textbf{Terraform}. 
+    \end{itemize}
+  }
+
+% ——————————————————————————————
+\cventry
+  {Jun 2018--Feb 2019}                 % years
+  {Tirocinio interno}                  % role
+  {Università Sapienza}                % institution
+  {Roma}                               % location
+  {}                                   % optional
+  {                                    % description
+    Progettazione e sviluppo di social login con OAuth2 per VirtuoSA,
+    un'applicazione cloud-native a microservizi.
+    \begin{itemize}
+      \item Microservizio back-end con \textbf{Spring Boot 2}
+      \item Generazione token \textbf{JWT} e pattern “Access Token”
+      \item Studio e implementazione del protocollo di autorizzazione \textbf{OAuth2}
+      \item Definizione di \textbf{REST API} e persistenza con \textbf{MySQL}
+      \item Deploy sulla piattaforma \textbf{OKD}
+      \item Pipeline CI/CD con Jenkins secondo le pratiche DevOps
+    \end{itemize}
+  }
+% ——————————————————————————————
 
 %----------------------------------------------------------------------------------------
 %   HONOURS AND AWARDS SECTION
@@ -137,10 +160,10 @@ Mi sono occupato di implementare lato back-end un microservizio che si occupa di
 
 \section{Competenze tecniche}
 
-\cvitem{Linguaggi di prog.}{Python, Bash, SQL, JavaScript (ReactJS), Java (Spring Framework), Golang, C}
-\cvitem{Tecnologie}{Kubernetes, Openstack, Docker, PostgreSQL, LXC, Gitlab CI/CD, OKD}
-\cvitem{Strumenti}{Bash, Git, Ansible, Juju, Maas, Vim, Sublime Text, Gitlab, Visual Studio Code, Terraform}
-\cvitem{Sistemi operativi}{GNU/Linux (Ubuntu), Windows}
+\cvitem{Linguaggi di prog.}{Python, FastAPI (Python Framework), Bash, SQL, JavaScript (ReactJS), Java (Spring Framework), Golang, C}
+\cvitem{Tecnologie}{Kubernetes, Openstack, Docker, LXC, VMWare, Ceph, PostgreSQL, InfluxDB, Prometheus, Grafana, Gitlab CI/CD}
+\cvitem{Strumenti}{Bash, Git, Ansible, Juju, MaaS, Terraform, Gitlab, Visual Studio Code, Vim}
+\cvitem{Sistemi operativi}{GNU/Linux (Ubuntu,Debian,CentOS)}
 \cvitem{Metodologie}{DevOps, Microservices, Agile}
 
 
